@@ -16,7 +16,10 @@ export default function Home() {
     }
     getPokeemon();
   },[]);
-
+    
+  if(!Pokimons){
+    return null
+  }
 
   return (
     <div className={styles.container}>
